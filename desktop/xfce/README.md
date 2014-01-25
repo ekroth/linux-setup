@@ -22,7 +22,18 @@ value="gtk-menu=16,16:gtk-button=22,22:panel-tasklist-menu=48,48:panel-applicati
 
 ## Firefox DPI ##
 
-Check Arch wiki for setting this properly.
+Check Arch wiki for setting this properly. (Well that was useful information ey?)
+
+## Composition ##
+
+```Compton``` is the way to go. These parameters work really well.
+```compton -c -r8 -l-12 -t-8  -b  -G  -f -D30 -I0.45 -O0.45  --paint-on-overlay --unredir-if-possible  --backend glx --glx-no-stencil --glx-no-rebind-pixmap```
+
+## Screen locker ##
+
+```light-locker``` uses ```lightdm``` in order to lock the screen, this works quite well with ```xflock4``` (used by xfce), use the following symlink in ```/usr/bin```: ```gnome-screensaver-command -> light-locker-command```.
+
+```$ ln -sf 
 
 ## Volume control ##
 
