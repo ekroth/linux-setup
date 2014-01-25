@@ -33,8 +33,6 @@ Check Arch wiki for setting this properly. (Well that was useful information ey?
 
 ```light-locker``` uses ```lightdm``` in order to lock the screen, this works quite well with ```xflock4``` (used by xfce), use the following symlink in ```/usr/bin```: ```gnome-screensaver-command -> light-locker-command```.
 
-```$ ln -sf 
-
 ## Volume control ##
 
 Install ```xfce4-volumed-pulse``` and the volume buttons should work.
