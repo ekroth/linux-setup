@@ -22,7 +22,8 @@ value="gtk-menu=16,16:gtk-button=22,22:panel-tasklist-menu=48,48:panel-applicati
 
 ## Firefox DPI ##
 
-Check Arch wiki for setting this properly. (Well that was useful information ey?)
+* Check Arch wiki for setting this properly. (Well that was useful information ey?)
+* Use ```FXChrome``` theme and hide the menu bar. 
 
 ## Composition ##
 
