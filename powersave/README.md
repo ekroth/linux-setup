@@ -6,7 +6,7 @@ Using these options all Powertop tunables are good.
 Haswell seem to default to Powersave governor and no configuration was needed.
 
 ## modprobe.d ##
-y
+
 * I don't use camera nor bluetooth, blacklist both.
 * Standard powersave options for intel sound and intel graphics.
 
