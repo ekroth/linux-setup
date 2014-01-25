@@ -5,6 +5,8 @@ Had some problems with laptop-mode tools and I don't really care about switching
 Using these options all Powertop tunables are good.
 Haswell seem to default to Powersave governor and no configuration was needed.
 
+The DE can fix backlight/suspend powersaving, default values are probably fine.
+
 ## modprobe.d ##
 
 * I don't use camera nor bluetooth, blacklist both.
