@@ -41,3 +41,7 @@ Install ```xfce4-volumed-pulse``` and the volume buttons should work.
 ## Window manager ##
 
 Xmonad is better and works great with xfce, see desktop/xmonad.
+
+## Wallpaper ##
+
+Set the wallpaper to ```/usr/local/share/wallpapers/default``` to use the same as lightdm.
