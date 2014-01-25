@@ -24,6 +24,10 @@ value="gtk-menu=16,16:gtk-button=22,22:panel-tasklist-menu=48,48:panel-applicati
 
 Check Arch wiki for setting this properly.
 
+## Volume control ##
+
+Install ```xfce4-volumed-pulse``` and the volume buttons should work.
+
 ## Window manager ##
 
 Xmonad is better and works great with xfce, see desktop/xmonad.
