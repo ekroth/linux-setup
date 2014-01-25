@@ -1,0 +1,10 @@
+[Unit]
+Description=Random wallpaper
+Before=display-manager.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/sh -c 'rm /usr/local/share/wallpapers/default && ln -sf $(ls /usr/local/share/wallpapers | shuf -n 1) /usr/local/share/wallpapers/default'
+
+[Install]
+WantedBy=graphical.target

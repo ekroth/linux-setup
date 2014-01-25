@@ -1,0 +1,9 @@
+[Unit]
+Description=Disable Mac optical
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/hda-verb /dev/snd/hwC1D0 0x21 SET_PIN_WID 0x00
+
+[Install]
+WantedBy=multi-user.target
