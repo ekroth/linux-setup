@@ -34,19 +34,4 @@ Oh wait, the mouse cursor is all wrong. Supply a proper ```/root/.Xresources``` 
 
 ### Random wallpaper ###
 
-Created a small script for randomizing wallpapers. Put the wallpapers in ```/usr/local/share/wallpapers``` and put this service file in ```/etc/systemd/system```.
-
-```
-[Unit]
-Description=Random wallpaper
-Before=display-manager.service
-
-[Service]
-Type=oneshot
-ExecStart=/usr/bin/sh -c 'rm /usr/local/share/wallpapers/default && ln -sf $(ls /usr/local/share/wallpapers | shuf -n 1) /usr/local/share/wallpapers/default'
-
-[Install]
-WantedBy=graphical.target
-```
-
-And choose background in gtk to ```/usr/local/share/wallpapers/default```, do the same for the desktop wallpaper as well.
+Created a small script for randomizing wallpapers. Put the wallpapers in ```/usr/local/share/wallpapers``` and install ```random-wallpaper.service``` (see systemd directory). Choose background in ```lightdm-gtk3-greeter``` to ```/usr/local/share/wallpapers/default```.
