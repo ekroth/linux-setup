@@ -30,6 +30,8 @@ clock-format=%H:%M
 
 Easy enough. Changing theme is fine, just make sure theme supports lightdm. 180 DPI is good for 13" Retina.
 
+Oh wait, the mouse cursor is all wrong. Supply a proper ```/root/.Xresources``` and (not sure if needed) ```/root/.Xdefaults```.
+
 ### Random wallpaper ###
 
 Created a small script for randomizing wallpapers. Put the wallpapers in ```/usr/local/share/wallpapers``` and put this service file in ```/etc/systemd/system```.
