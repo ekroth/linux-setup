@@ -6,8 +6,8 @@ Lightdm is very customizable and works properly with systemd.
 ## General ##
 
 * Use ```accountsservice```.
-* Install lightdm-gtk3-greeter (I'm using devel, there's probably a good reason for that?).
-* lightdm.conf is fine, just change ```greeter-session=lightdm-gtk-greeter```.
+* Install ```lightdm-gtk3-greeter``` (I'm using devel, there's probably a good reason for that?).
+* ```lightdm.conf``` is fine, just change ```greeter-session=lightdm-gtk-greeter```.
 
 ## gtk ##
 
