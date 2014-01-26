@@ -27,7 +27,6 @@ value="gtk-menu=16,16:gtk-button=22,22:panel-tasklist-menu=48,48:panel-applicati
 
 ## Composition ##
 
-```Compton``` is the way to go. These parameters work really well.
 ```compton -c -r8 -l-12 -t-8  -b  -G  -f -D30 -I0.45 -O0.45  --paint-on-overlay --unredir-if-possible  --backend glx --glx-no-stencil --glx-no-rebind-pixmap```
 
 ## Screen locker ##
@@ -36,9 +35,8 @@ value="gtk-menu=16,16:gtk-button=22,22:panel-tasklist-menu=48,48:panel-applicati
 
 ## Powersave ##
 
-Set any options in Xfce Power Manager, however don't toggle "Lock when suspend/hibernate". Some kind of bug that the power manager starts failing after resume.
-
-Edit ```/etc/systemd/logind.conf``` according to https://wiki.archlinux.org/index.php/Xfce#xfce4-power-manager.
+* Disable "Lock when suspend/hibernate". Some kind of bug that the power manager starts failing after resume.
+* Edit ```/etc/systemd/logind.conf``` according to https://wiki.archlinux.org/index.php/Xfce#xfce4-power-manager.
 
 ## Volume control ##
 
