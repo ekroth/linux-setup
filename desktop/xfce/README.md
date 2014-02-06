@@ -26,7 +26,9 @@ value="gtk-menu=16,16:gtk-button=22,22:panel-tasklist-menu=48,48:panel-applicati
 * Use ```FXChrome``` theme and hide the menu bar. 
 
 ## Composition ##
+```compton --backend glx```
 
+(Old)
 ```compton -c -r8 -l-12 -t-8  -b  -G  -f -D30 -I0.45 -O0.45  --paint-on-overlay --unredir-if-possible  --backend glx --glx-no-stencil --glx-no-rebind-pixmap```
 
 ## Screen locker ##
