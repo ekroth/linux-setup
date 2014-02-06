@@ -1,0 +1,264 @@
+***PowerTOP Report***
+**System Information**
+
+PowerTOP Version;v2.5
+Kernel Version;Linux version 3.12.9-3-ck (squishy@ease) (gcc version 4.8.2 20131219 (prerelease) (GCC) ) #1 SMP PREEMPT Sun Feb 2 15:00:54 EST 2014
+System Name;Apple Inc. Mac-189A3D4F975D5FFC 1.0
+CPU Information;4x  Intel(R) Core(TM) i5-4258U CPU @ 2.40GHz
+OS Information;Arch Linux
+
+**Power Consumption Summary**
+144.7 wakeups/second, 14.4 GPU ops/second, 0.0 VFS ops/sec, 22.2 GFX wakes/sec and 3.5% CPU use
+
+Power est.;Usage;Events/s;Category;Description
+  13.0 W  ;  0.0 pkts/s;;Device;Network interface: wlp3s0 (wl)
+  11.5 W  ; 50.0%;;Device;Display backlight
+ 39.0 mW  ;  1.4%; 0.00;Timer;wl_timer
+ 37.6 mW  ;  1.4%; 0.00;Interrupt;[1] timer(softirq)
+ 9.64 mW  ;  0.2%; 67.3;Interrupt;[63] i915
+ 6.63 mW  ;  0.2%;  5.5;Interrupt;[6] tasklet(softirq)
+ 4.91 mW  ;  0.1%; 35.0;Process;compton -c -r8 -l-12 -t-8 -G -f -D30 -I0.45 -O0.45 --paint-on-overlay --unredir-if-possible --backend glx --glx-no-stencil --gl
+ 2.82 mW  ;  0.1%; 0.30;Process;/usr/sbin/X :0 -auth /run/lightdm/root/:0 -nolisten tcp vt1 -novtswitch 
+ 1.06 mW  ;  0.0%; 19.3;Process;urxvt 
+  830 uW  ;  0.0%;  6.8;Timer;tick_sched_timer
+  745 uW  ;  0.0%; 0.00;Interrupt;[18] wlp3s0
+
+**Processor Idle state report**
+
+Package 0;;Core 0;;CPU 0;CPU 2
+;;;;;;C0 active;  1.7%;;  0.5%;
+;;;;;;POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+;;;;;;C1E-HSW;  2.6%;   2.7 ms;  0.1%;   0.4 ms
+C2 (pc2); 14.6%;;;;;;;;;
+C3 (pc3);  0.1%;;C3 (cc3);  0.6%;;C3-HSW;  0.1%;   0.3 ms;  0.4%;   5.5 ms
+C6 (pc6); 10.4%;;C6 (cc6);  0.0%;;C6-HSW;  0.0%;   0.7 ms;  0.0%;   0.0 ms
+C7 (pc7);  0.0%;;C7 (cc7); 92.5%;;C7s-HSW;  0.3%;   1.0 ms;  0.0%;   1.3 ms
+C8 (pc8);  0.0%;;;;;C8-HSW;  0.2%;   2.8 ms;  0.4%;   5.2 ms
+C9 (pc9);  0.0%;;;;;C9-HSW;  6.3%;  16.3 ms;  6.3%;  12.6 ms
+C10 (pc10);  0.0%;;;;;C10-HSW; 87.7%;  44.3 ms; 91.1%;  15.6 ms
+;;Core 1;;CPU 1;CPU 3
+;;;;;C0 active;  0.1%;;  0.0%;
+;;;;;POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+;;;;;C1E-HSW;  6.1%;   7.1 ms;  0.0%;   0.7 ms
+;;;;;;;;;
+;;C3 (cc3);  0.0%;;C3-HSW;  0.0%;   0.2 ms;  0.0%;   0.0 ms
+;;C6 (cc6);  0.0%;;C6-HSW;  0.0%;   0.7 ms;  0.0%;   0.0 ms
+;;C7 (cc7); 91.0%;;C7s-HSW;  0.0%;   1.5 ms;  0.0%;   0.7 ms
+;;;;;C8-HSW;  0.0%;   1.2 ms;  1.5%;  27.2 ms
+;;;;;C9-HSW;  1.9%;  29.8 ms;  3.4%;  75.9 ms
+;;;;;C10-HSW; 89.2%;  52.3 ms; 94.8%; 371.9 ms
+;;GPU 21043312;
+;;;;
+;;Powered On; 74.3%;
+;;RC6; 25.7%;
+;;RC6p;  0.0%;
+;;RC6pp;  0.0%;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+
+**Processor Frequency Report**
+
+Package 0;;Core 0;;CPU 0;CPU 2
+;;;;;;Actual;2.5 GHz;2.5 GHz
+Idle;  99.7% ;;Idle;  99.8% ;;Idle;  99.8% ; 100.0% 
+2.90 GHz;   0.0% ;;2.71 GHz;   0.0% ;;2.71 GHz;   0.0% ;   0.0% 
+2.81 GHz;   0.0% ;;2.81 GHz;   0.0% ;;2.81 GHz;   0.0% ;   0.0% 
+2.71 GHz;   0.0% ;;2.60 GHz;   0.1% ;;2.60 GHz;   0.1% ;   0.0% 
+2.60 GHz;   0.1% ;;2.50 GHz;   0.0% ;;2.50 GHz;   0.0% ;   0.0% 
+;;Core 1;;CPU 1;CPU 3
+;;;;;Actual;2.4 GHz;2.4 GHz
+;;Idle;  99.9% ;;Idle;  99.9% ; 100.0% 
+;;2.71 GHz;   0.0% ;;2.71 GHz;   0.0% ;   0.0% 
+;;2.60 GHz;   0.0% ;;2.60 GHz;   0.0% ;   0.0% 
+;;2.50 GHz;   0.1% ;;2.50 GHz;   0.0% ;   0.0% 
+;;2.40 GHz;   0.0% ;;2.40 GHz;   0.0% ;
+
+**Overview of Software Power Consumers**
+
+Power est.;Usage;Wakeups/s;GPU ops/s;Disk IO/s;GFX Wakeups/s;Category;Description
+ 39.0 mW  ; 14.2 ms/s;;;;;Timer;wl_timer
+ 37.6 mW  ; 13.7 ms/s;;;;;Interrupt;[1] timer(softirq)
+ 9.64 mW  ;  1.6 ms/s; 67.3;;;;Interrupt;[63] i915
+ 6.63 mW  ;  2.3 ms/s;  5.5;;;;Interrupt;[6] tasklet(softirq)
+ 4.91 mW  ;  0.8 ms/s; 32.9;  2.1;; 19.3;Process;compton -c -r8 -l-12 -t-8 -G -f -D30 -I0.45 -O0.45 --paint-on-overlay --unredir-if-possible --backend glx --glx-no-stencil --gl
+ 2.82 mW  ;  1.0 ms/s; 0.30;;;;Process;/usr/sbin/X :0 -auth /run/lightdm/root/:0 -nolisten tcp vt1 -novtswitch 
+ 1.06 mW  ;180.3 us/s;  7.1; 12.1;;  2.0;Process;urxvt 
+  830 uW  ;103.7 us/s;  6.8;;;;Timer;tick_sched_timer
+  745 uW  ;271.6 us/s;;;;;Interrupt;[18] wlp3s0
+  412 uW  ; 89.3 us/s;  2.1;;;;Interrupt;[9] acpi
+  387 uW  ; 91.7 us/s;  1.7;;;;Timer;hrtimer_wakeup
+  358 uW  ; 69.5 us/s;  2.1;;;;kWork;intel_fbc_work_fn
+  326 uW  ; 52.1 us/s;  2.3;;;;Process;/usr/lib/upower/upowerd 
+  319 uW  ; 14.8 us/s;  3.5;;;;Process;[usb-storage]
+  224 uW  ; 29.3 us/s;  1.8;;;;Process;[irq/65-(null)]
+  197 uW  ; 58.8 us/s;  0.4;;;;Process;/usr/bin/NetworkManager --no-daemon 
+  185 uW  ;  6.3 us/s;  2.1;;;;kWork;intel_unpin_work_fn
+  168 uW  ; 37.8 us/s;  0.8;;;  0.7;Process;nm-applet 
+  145 uW  ;  6.5 us/s;  1.6;;;;Process;[ksoftirqd/0]
+  141 uW  ; 19.3 us/s;  1.1;;;;Interrupt;[65] (null)
+  113 uW  ; 38.1 us/s; 0.10;;;  0.0;Process;xfce4-power-manager --restart --sm-client-id 2494ce781-fec9-4e62-a59f-e1a806fa42c4 
+    0 mW  ; 15.0 us/s;  0.5;;;;Interrupt;[64] xhci_hcd
+    0 mW  ; 22.8 us/s;;;;;Process;/usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation 
+    0 mW  ;  5.8 us/s;  0.5;;;;kWork;i915_gem_retire_work_handler
+    0 mW  ; 10.0 us/s;  0.3;;;;Process;/usr/bin/gpg-agent --sh --daemon --enable-ssh-support --write-env-file /home/ekroth/.cache/gpg-agent-info 
+    0 mW  ; 18.5 us/s; 0.05;;;;Interrupt;[4] block(softirq)
+    0 mW  ;  2.2 us/s;  0.6;;;;Process;[rcu_preempt]
+    0 mW  ; 16.3 us/s;;;;;Timer;intel_pstate_timer_func
+    0 mW  ;  0.7 us/s;  0.5;;;;kWork;mei_timer
+    0 mW  ;  0.0 us/s;  0.5;;;;kWork;disk_events_workfn
+    0 mW  ;  5.8 us/s; 0.25;;;;Process;xfce4-panel --display :0.0 --sm-client-id 2ea7df8d4-3ea5-452c-87a7-b9a1cca9ed03 
+    0 mW  ;  8.5 us/s; 0.15;  0.1;;  0.1;Process;/usr/lib/xfce4/panel/wrapper /usr/lib/xfce4/panel/plugins/libsystray.so 6 33554458 systray Notification Area Area where notific
+    0 mW  ; 12.3 us/s;;;;;Timer;delayed_work_timer_fn
+    0 mW  ; 12.1 us/s;;;;;Process;[kworker/2:1]
+    0 mW  ;  4.8 us/s; 0.25;;;;Process;/usr/lib/accountsservice/accounts-daemon 
+    0 mW  ; 10.0 us/s; 0.05;;;;Interrupt;[9] RCU(softirq)
+    0 mW  ;  9.9 us/s; 0.05;;;;kWork;bdi_writeback_workfn
+    0 mW  ;  8.8 us/s; 0.05;;;;Process;[kworker/0:0]
+    0 mW  ;  5.6 us/s; 0.15;;;;Process;[jbd2/sda6-8]
+    0 mW  ;  0.2 us/s; 0.30;;;;kWork;blk_delay_work
+    0 mW  ;  8.3 us/s;;;;;Timer;clocksource_watchdog
+    0 mW  ;  8.2 us/s;;;;;Process;[kworker/u16:2]
+    0 mW  ;  0.0 us/s; 0.25;;;;kWork;acpi_os_execute_deferred
+    0 mW  ;  2.2 us/s; 0.15;;;;Process;/usr/lib/rtkit/rtkit-daemon 
+    0 mW  ;  6.1 us/s;;;;;kWork;vmstat_update
+    0 mW  ;  5.6 us/s;;;;;Process;[kworker/1:1]
+    0 mW  ;  1.9 us/s; 0.10;;;;Process;[khugepaged]
+    0 mW  ;  1.5 us/s; 0.10;;;;Process;/usr/sbin//wpa_supplicant -u 
+    0 mW  ;  0.1 us/s; 0.10;;;;kWork;cfq_kick_queue
+    0 mW  ;  1.1 us/s; 0.05;;;;Process;/usr/lib/GConf/gconfd-2 
+    0 mW  ;  2.0 us/s;;;;;Process;[ksoftirqd/2]
+    0 mW  ;  1.7 us/s;;;;;Process;[kworker/3:1]
+    0 mW  ;  1.6 us/s;;;;;Timer;process_timeout
+    0 mW  ;  0.1 us/s; 0.05;;;;kWork;neigh_periodic_work
+    0 mW  ;  1.0 us/s;;;;;Process;[kworker/3:1H]
+    0 mW  ;  0.5 us/s;;;;;Process;[ksoftirqd/1]
+    0 mW  ;  0.5 us/s;;;;;Timer;laptop_mode_timer_fn
+    0 mW  ;  0.5 us/s;;;;;Timer;commit_timeout
+    0 mW  ;  0.3 us/s;;;;;Timer;writeout_period
+    0 mW  ;  0.1 us/s;;;;;Timer;cfq_idle_slice_timer
+    0 mW  ;  0.0 us/s;;;;;Timer;blk_rq_timed_out_timer
+
+**Device Power Report**
+The battery reports a discharge rate of 10.1 W
+System baseline power is estimated at 26.4 W
+
+Power est.;Usage;Device name
+  13.0 W   ;  0.0 pkts/s;Network interface: wlp3s0 (wl)
+  5.75 W   ; 50.0%;Display backlight
+  5.75 W   ; 45.7%;Display backlight
+  865 mW   ;  3.5%;DRAM
+  828 mW   ; 14.4 ops/s;GPU core
+  121 mW   ;  3.5%;CPU core
+  107 mW   ;  3.5%;CPU misc
+    0 mW   ;100.0%;USB device: Card Reader (Apple)
+    0 mW   ;100.0%;USB device: Apple Internal Keyboard / Trackpad (Apple Inc.)
+    0 mW   ;100.0%;Radio device: wl
+    0 mW   ;100.0%;USB device: xHCI Host Controller
+    0 mW   ;100.0%;USB device: xHCI Host Controller
+    0 mW   ; 14.4 ops/s;GPU misc
+    0 mW   ;  0.0%;USB device: BRCM20702 Hub (Apple Inc.)
+    0 mW   ;  0.0%;USB device: usb-device-05ac-820a
+    0 mW   ;  0.0%;USB device: Bluetooth USB Host Controller (Apple Inc.)
+    0 mW   ;  0.0%;USB device: usb-device-05ac-820b
+    0 mW   ;  0.0%;Audio codec hwC0D0: Intel
+           ;100.0%;PCI Device: Intel Corporation Lynx Point-LP PCI Express Root Port 2
+           ;100.0%;PCI Device: Intel Corporation Device 0a2e
+           ;100.0%;PCI Device: Intel Corporation Lynx Point-LP USB xHCI HC
+           ;100.0%;PCI Device: Intel Corporation Lynx Point-LP HECI #0
+           ;100.0%;PCI Device: Intel Corporation Lynx Point-LP HD Audio Controller
+           ;100.0%;PCI Device: Intel Corporation Lynx Point-LP PCI Express Root Port 1
+           ;100.0%;PCI Device: Intel Corporation Lynx Point-LP PCI Express Root Port 3
+           ;100.0%;PCI Device: Intel Corporation Lynx Point-LP PCI Express Root Port 5
+           ;100.0%;PCI Device: Intel Corporation Lynx Point-LP PCI Express Root Port 6
+           ;100.0%;PCI Device: Intel Corporation Lynx Point-LP LPC Controller
+           ;100.0%;PCI Device: Broadcom Corporation BCM4360 802.11ac Wireless Network Adapter
+           ;100.0%;PCI Device: Samsung Electronics Co Ltd Device 1600
+           ;  0.0%;PCI Device: Intel Corporation Device 0a0c
+           ;  0.0%;PCI Device: Intel Corporation Lynx Point-LP SMBus Controller
+           ;  0.0%;PCI Device: Broadcom Corporation Device 1570
+           ;  0.0%;PCI Device: Intel Corporation Haswell-ULT DRAM Controller
+
+**Process device activity**
+
+Process;Device
+systemd;/dev/autofs
+;/dev/kmsg
+systemd-journal;/dev/kmsg
+;/dev/kmsg
+acpid;/dev/input/event0
+;/dev/input/event1
+;/dev/input/event10
+;/dev/input/event12
+;/dev/input/event13
+;/dev/input/event14
+;/dev/input/event2
+;/dev/input/event3
+;/dev/input/event4
+;/dev/input/event5
+;/dev/input/event6
+;/dev/input/event8
+;/dev/input/event9
+systemd-logind;/dev/input/event0
+;/dev/input/event1
+;/dev/input/event2
+;/dev/input/event3
+;/dev/input/event4
+X;/dev/dri/card0
+;/dev/input/event1
+;/dev/input/event15
+;/dev/input/event2
+;/dev/input/event3
+;/dev/input/event4
+;/dev/input/event5
+;/dev/input/event6
+;/dev/input/event7
+;/dev/vga_arbiter
+wpa_supplicant;/dev/rfkill
+pulseaudio;/dev/snd/controlC0
+;/dev/snd/controlC0
+;/dev/snd/controlC1
+;/dev/snd/controlC1
+upowerd;/dev/cpu_dma_latency
+;/dev/input/event0
+;/dev/network_latency
+panel-8-mixer;/dev/snd/controlC0
+;/dev/snd/controlC1
+compton;/dev/dri/card0
+
+**Optimal Tuned Software Settings**
+
+Description
+VM writeback timeout
+Enable SATA link power Managmenet for host0
+Enable Audio codec power management
+NMI watchdog should be turned off
+Autosuspend for USB device Apple Internal Keyboard / Trackpad [Apple Inc.]
+Autosuspend for USB device Card Reader [Apple]
+Autosuspend for USB device xHCI Host Controller [usb1]
+Autosuspend for USB device xHCI Host Controller [usb2]
+Autosuspend for unknown USB device 1-3.1 (05ac:820a)
+Autosuspend for USB device Bluetooth USB Host Controller [Apple Inc.]
+Autosuspend for USB device BRCM20702 Hub [Apple Inc.]
+Autosuspend for unknown USB device 1-3.2 (05ac:820b)
+Runtime PM for PCI Device Broadcom Corporation Device 1570
+Runtime PM for PCI Device Intel Corporation Haswell-ULT DRAM Controller
+Runtime PM for PCI Device Intel Corporation Device 0a2e
+Runtime PM for PCI Device Intel Corporation Device 0a0c
+Runtime PM for PCI Device Intel Corporation Lynx Point-LP HD Audio Controller
+Runtime PM for PCI Device Intel Corporation Lynx Point-LP HECI #0
+Runtime PM for PCI Device Intel Corporation Lynx Point-LP PCI Express Root Port 1
+Runtime PM for PCI Device Intel Corporation Lynx Point-LP PCI Express Root Port 2
+Runtime PM for PCI Device Intel Corporation Lynx Point-LP PCI Express Root Port 3
+Runtime PM for PCI Device Intel Corporation Lynx Point-LP PCI Express Root Port 5
+Runtime PM for PCI Device Intel Corporation Lynx Point-LP PCI Express Root Port 6
+Runtime PM for PCI Device Intel Corporation Lynx Point-LP LPC Controller
+Runtime PM for PCI Device Intel Corporation Lynx Point-LP SMBus Controller
+Runtime PM for PCI Device Broadcom Corporation BCM4360 802.11ac Wireless Network Adapter
+Runtime PM for PCI Device Samsung Electronics Co Ltd Device 1600
+Runtime PM for PCI Device Intel Corporation Lynx Point-LP USB xHCI HC
+Wake-on-lan status for device wlp3s0
+Using 'ondemand' cpufreq governor
+
