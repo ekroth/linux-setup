@@ -67,3 +67,9 @@ Xmonad is better and works great with xfce, see desktop/xmonad.
 ## Wallpaper ##
 
 Set the wallpaper to ```/usr/local/share/wallpapers/default``` to use the same as lightdm.
+
+## Terminal ##
+
+Set xfce4-terminal as default. 
+Install ```local/rxvt-unicode-terminfo```.
+Set export TERM='rxvt-unicode-256color'.
