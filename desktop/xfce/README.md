@@ -35,10 +35,26 @@ value="gtk-menu=16,16:gtk-button=22,22:panel-tasklist-menu=48,48:panel-applicati
 
 ```light-locker``` uses ```lightdm``` in order to lock the screen, this works quite well with ```xflock4``` (used by xfce), use the following symlink in ```/usr/bin```: ```gnome-screensaver-command -> light-locker-command```.
 
+## Power Manager fix ##
+
+Enable ```restart-pm@.service``` to restart power manager every suspend, otherwise it sometimes stops working.
+
 ## Powersave ##
 
 * Disable "Lock when suspend/hibernate". Some kind of bug that the power manager starts failing after resume.
-* Edit ```/etc/systemd/logind.conf``` according to https://wiki.archlinux.org/index.php/Xfce#xfce4-power-manager.
+* Edit ```/etc/systemd/logind.conf```.
+
+```
+HandleSuspendKey=suspend
+HandleLidSwitch=suspend
+LidSwitchIgnoreInhibited=yes
+
+HandlePowerKey=ignore
+#HandleSuspendKey=ignore
+HandleHibernateKey=ignore
+#HandleLidSwitch=ignore
+```
+This differs from the xfce arch wiki, since this enables suspend on lid close in other targets (multi-user) than graphical.
 
 ## Volume control ##
 
