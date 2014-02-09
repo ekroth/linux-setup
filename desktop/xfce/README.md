@@ -37,7 +37,7 @@ value="gtk-menu=16,16:gtk-button=22,22:panel-tasklist-menu=48,48:panel-applicati
 
 ## Power Manager fix ##
 
-Enable ```restart-pm@.service``` to restart power manager every suspend, otherwise it sometimes stops working.
+Start ```pm-restarter```  at startup.
 
 ## Powersave ##
 
