@@ -40,6 +40,10 @@ pacman -S gvfs-afc gvfs-smb gvfs-gphoto2 gvfs-afp gvfs-mtp ntfs-3g dosfstools
 
 ```light-locker``` uses ```lightdm``` in order to lock the screen, this works quite well with ```xflock4``` (used by xfce), use the following symlink in ```/usr/bin```: ```gnome-screensaver-command -> light-locker-command```.
 
+## SSH ##
+
+Install gnome-keyring and tick GNOME SERVICES in session and startup Xfce.
+
 ## Power Manager fix ##
 
 Start ```pm-restarter```  at startup.
