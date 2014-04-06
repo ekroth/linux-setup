@@ -25,4 +25,8 @@ Run the command
 The network sink will now be available in output devices, check ```pavucontrol```. 
 Add the part without ```pacmd``` to ```/etc/pulse/default.pa``` to make it permanent.
 
+Please note that there are two different modules (this will change in PA 5.0), ```module-tunnel-sink```
+and ```module-tunnel-sink-new```, try both. I got less stuttering with ```new```, but there's
+a longer delay (0.5 seconds vs 2.0 seconds).
+
 Done!
