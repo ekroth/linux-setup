@@ -20,7 +20,7 @@ Source computer
 ---------------
 Run the command
 
-```pacmd load-module module-tunnel-sink-new server=<ip> sink=<output sink> sink_name=<name>```.
+```pacmd load-module module-tunnel-sink-new server=<ip> sink=<output sink> sink_name=<any name>```
 
 The network sink will now be available in output devices, check ```pavucontrol```. 
 Add the part without ```pacmd``` to ```/etc/pulse/default.pa``` to make it permanent.
