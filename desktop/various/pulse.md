@@ -12,13 +12,17 @@ the GUI works fine.
 
 * Start ```paprefs``` and enable ```Enable network access to local sound device``` 
 and its sub options.
-* Find out the name of the output sink, this can be done using ```pactl list | grep "Name: alsa_output"```.
+* Find out the name of the output sink, this can be done using 
+
+```pactl list | grep "Name: alsa_output"```.
 
 Source computer
 ---------------
-Edit ```/etc/pulse/default.pa```, and add the line
-```load-module module-tunnel-sink-new server=<ip> sink=<output sink> sink_name=<name>```.
+Run the command
+
+```pacmd load-module module-tunnel-sink-new server=<ip> sink=<output sink> sink_name=<name>```.
 
 The network sink will now be available in output devices, check ```pavucontrol```. 
+Add the part without ```pacmd``` to ```/etc/pulse/default.pa``` to make it permanent.
 
 Done!
