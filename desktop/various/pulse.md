@@ -1,5 +1,5 @@
-How to configure a network sink
-===============================
+Network sink in Pulseaudio
+=============================================
 
 One alternative is to use Avahi and automatically discover
 the available sinks, but this doesn't work so well when
