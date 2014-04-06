@@ -7,7 +7,7 @@ restarting computers etc. This guide uses a static IP and sink.
 
 Sink computer
 -------------
-This can also be done directly in ```default.pa```, but 
+This can also be done directly in ```/etc/pulse/default.pa```, but 
 the GUI works fine.
 
 * Start ```paprefs``` and enable ```Enable network access to local sound device``` 
