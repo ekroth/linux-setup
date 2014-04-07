@@ -43,3 +43,10 @@ If this causes stuttering the problem can be fixed in two ways. Recompile
 network manager and apply a fix, I haven't tried this. The alternative is
 to edit the current connection for the network and set the ```BSSID``` option. 
 This disables the network scanning while connected to this particular network.
+
+Pavucontrol
+-----------
+```pavucontrol``` can be run from the client to edit settings on the
+remote computer, simply run the command
+
+```PULSE_SERVER=<ip> pavucontrol```
