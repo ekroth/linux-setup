@@ -20,3 +20,7 @@ The DE can fix backlight/suspend powersaving, default values are probably fine.
 ## udev/rules.d ##
 
 * SATA/USB/PCI/Network powersave options. WOL disabled.
+
+## polkit ##
+
+* Force enable suspend/hibernate to all users, work-around for light-locker suspend "bug".
