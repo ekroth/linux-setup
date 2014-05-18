@@ -44,6 +44,10 @@ pacman -S gvfs-afc gvfs-smb gvfs-gphoto2 gvfs-afp gvfs-mtp ntfs-3g dosfstools
 
 Install gnome-keyring and tick GNOME SERVICES in session and startup Xfce.
 
+## Permissions ##
+
+Install lxpolkit, it is recommended?
+
 ## Power Manager fix ##
 
 Start ```pm-restarter```  at startup.
@@ -54,16 +58,13 @@ Start ```pm-restarter```  at startup.
 * Edit ```/etc/systemd/logind.conf```.
 
 ```
-HandleSuspendKey=suspend
-HandleLidSwitch=suspend
-LidSwitchIgnoreInhibited=yes
-
 HandlePowerKey=ignore
-#HandleSuspendKey=ignore
+HandleSuspendKey=ignore
 HandleHibernateKey=ignore
-#HandleLidSwitch=ignore
+HandleLidSwitch=ignore
+
 ```
-This differs from the xfce arch wiki, since this enables suspend on lid close in other targets (multi-user) than graphical.
+Recently changed. This is just like ArchWiki says, forcing suspend would make disable-suspend-external-monitor fail.
 
 ## Volume control ##
 
